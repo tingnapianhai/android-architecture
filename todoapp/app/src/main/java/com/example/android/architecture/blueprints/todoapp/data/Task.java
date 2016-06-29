@@ -36,6 +36,7 @@ public final class Task {
     private final String mDescription;
 
     private final boolean mCompleted;
+
     /**
      * Use this constructor to create a new active Task.
      *
@@ -55,7 +56,7 @@ public final class Task {
      *
      * @param title
      * @param description
-     * @param id of the class
+     * @param id          of the class
      */
     public Task(@Nullable String title, @Nullable String description, String id) {
         mId = id;

@@ -31,7 +31,7 @@ import java.util.Map;
 
 /**
  * Concrete implementation to load tasks from the data sources into a cache.
- * <p>
+ * <p/>
  * For simplicity, this implements a dumb synchronisation between locally persisted data and data
  * obtained from the server, by using the remote data source only if the local database doesn't
  * exist or is empty.
@@ -88,7 +88,7 @@ public class TasksRepository implements TasksDataSource {
     /**
      * Gets tasks from cache, local data source (SQLite) or remote data source, whichever is
      * available first.
-     * <p>
+     * <p/>
      * Note: {@link LoadTasksCallback#onDataNotAvailable()} is fired if all data sources fail to
      * get the data.
      */
@@ -198,7 +198,7 @@ public class TasksRepository implements TasksDataSource {
     /**
      * Gets tasks from local data source (sqlite) unless the table is new or empty. In that case it
      * uses the network data source. This is done to simplify the sample.
-     * <p>
+     * <p/>
      * Note: {@link LoadTasksCallback#onDataNotAvailable()} is fired if both data sources fail to
      * get the data.
      */

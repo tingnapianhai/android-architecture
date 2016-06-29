@@ -43,12 +43,12 @@ public class AddEditTaskPresenter implements AddEditTaskContract.Presenter,
     /**
      * Creates a presenter for the add/edit view.
      *
-     * @param taskId ID of the task to edit or null for a new task
+     * @param taskId          ID of the task to edit or null for a new task
      * @param tasksRepository a repository of data for tasks
-     * @param addTaskView the add/edit view
+     * @param addTaskView     the add/edit view
      */
     public AddEditTaskPresenter(@Nullable String taskId, @NonNull TasksDataSource tasksRepository,
-            @NonNull AddEditTaskContract.View addTaskView) {
+                                @NonNull AddEditTaskContract.View addTaskView) {
         mTaskId = taskId;
         mTasksRepository = checkNotNull(tasksRepository);
         mAddTaskView = checkNotNull(addTaskView);
